@@ -103,6 +103,8 @@ abbr gfo 'git fetch origin'
 
 abbr ghh 'git help'
 
+abbr gi 'git init'
+
 abbr gignore 'git update-index --assume-unchanged'
 abbr gignored 'git ls-files -v | grep "^[[:lower:]]"'
 
@@ -142,6 +144,7 @@ abbr gp 'git push'
 abbr gpd 'git push --dry-run'
 abbr gpf 'git push --force-with-lease'
 abbr gpf! 'git push --force'
+abbr gpsu 'git push --set-upstream origin (git_current_branch)'
 abbr gpt 'git push --tags'
 abbr gptf 'git push --tags --force-with-lease'
 abbr gptf! 'git push --tags --force'
@@ -153,9 +156,9 @@ abbr gpv 'git push -v'
 # gpl: git pull
 abbr gpl 'git pull'
 abbr gplo 'git pull origin'
-abbr gplom 'git pull origin master'
+abbr gplom 'git pull origin (git_main_branch)'
 abbr gplu 'git pull upstream'
-abbr gplum 'git pull upstream master'
+abbr gplum 'git pull upstream (git_main_branch)'
 
 # gr: git remote
 abbr gr 'git remote -v'
@@ -329,6 +332,7 @@ function git_abbr_uninstall --on-event git_abbr_uninstall
   abbr -e gfa
   abbr -e gfo
   abbr -e ghh
+  abbr -e gi
   abbr -e gignore
   abbr -e gignored
   abbr -e gk

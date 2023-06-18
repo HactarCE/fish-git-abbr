@@ -1,4 +1,5 @@
 # fish-git-abbr
+
 Abbreviations for `git` for the [fish shell](https://fishshell.com/) :fish:.
 
 Mainly based off those of [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git).
@@ -40,7 +41,7 @@ abbreviation | result
 `gbsr` | `git bisect reset`
 `gbss` | `git bisect start`
 `gc` | `git commit -v`
-`gci` | `git commit -v --allow-empty -m'chore: initial commit'
+`gci` | `git commit -v --allow-empty -m 'chore: initial commit'`
 `gc!` | `git commit -v --amend`
 `gcn` | `git commit -v --no-edit`
 `gcn!` | `git commit -v --amend --no-edit`
@@ -81,6 +82,7 @@ abbreviation | result
 `gfa` | `git fetch --all --prune`
 `gfo` | `git fetch origin`
 `ghh` | `git help`
+`gi` | `git init`
 `gignore` | `git update-index --assume-unchanged`
 `gignored` | `git ls-files -v | grep "^[[:lower:]]"`
 `gk` | `gitk --all --branches &!`
@@ -105,6 +107,7 @@ abbreviation | result
 `gpd` | `git push --dry-run`
 `gpf` | `git push --force-with-lease`
 `gpf!` | `git push --force`
+`gpsu` | `git push --set-upstream origin (git_current_branch)`
 `gpt` | `git push --tags`
 `gptf` | `git push --tags --force-with-lease`
 `gptf!` | `git push --tags --force`
@@ -114,9 +117,9 @@ abbreviation | result
 `gpv` | `git push -v`
 `gpl` | `git pull`
 `gplo` | `git pull origin`
-`gplom` | `git pull origin master`
+`gplom` | `git pull origin (git_main_branch)`
 `gplu` | `git pull upstream`
-`gplum` | `git pull upstream master`
+`gplum` | `git pull upstream (git_main_branch)`
 `gr` | `git remote -v`
 `gra` | `git remote add`
 `grau` | `git remote add upstream`
